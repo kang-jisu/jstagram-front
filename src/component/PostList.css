@@ -30,9 +30,15 @@
 
 .commentbody{
     padding:0px !important;
-    padding-left:1.25rem !important; 
+    padding-left:1.25rem !important;
+    position: relative;
 }
 
+
+.cardfoot{
+    position: absolute;
+    bottom:0px;
+}
 /* /// */
 .post-detail-card{
     width:935px;
@@ -44,7 +50,7 @@
 
 .card-detail-right{
     position: relative;
-
+    min-height: 620px;
 }
 
 .detail-head{
@@ -58,4 +64,6 @@
 .detail-icon-body{
     padding-bottom:15px !important;
     padding-top:15px !important;
+    position: absolute;
+    bottom:50px;
 }

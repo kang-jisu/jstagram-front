@@ -1,12 +1,10 @@
 
 import React, { Component } from 'react';
-import {Route, Link} from 'react-router-dom';
-import {Detail,Insert, Main,Delete} from './pages';
-import {Post} from './component';
+import {Route} from 'react-router-dom';
+import {Detail,UserInsert, Main,Delete,Insert} from './pages';
 import {Header} from './component';
 import {Container} from 'reactstrap'; 
 import ScrollToTop from './ScrollToTop';
-import axios from 'axios';
 
 import './App.css'
 
@@ -54,8 +52,9 @@ class App extends Component {
           <Route exact path="/" component={Main} userlist={this.state.userlist}/>
           <Route path="/main" component={Main} userlist={this.state.userlist}/>
           <Route exact path="/detail/:postid" component={Detail}/>
-          <Route path="/insert" component={Insert}/>
+          <Route path="/user/insert" component={UserInsert}/>
           <Route exact path="/delete/:obj/:id" component={Delete}/>
+          <Route exact path="/insert" component={Insert}/>
           <Route path="/comment" component={Comment}/>
           
           </div>

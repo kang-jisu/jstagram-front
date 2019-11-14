@@ -9,6 +9,8 @@ import moment from 'moment';
 import axios from 'axios';
 
 class Post extends Component {
+
+    
     insertForm = event =>{
         event.preventDefault();
 
@@ -45,7 +47,7 @@ class Post extends Component {
                     <Card className="mb-5 post-detail-card" key={post.id}>
                     <Row className="no-gutters">
                         <Col md="8">
-                        <CardImg src={img} className="card-img detail-image" alt={post.image}/>
+                        <CardImg src={`/images/${post.image}`} className="card-img detail-image" alt={post.image}/>
                         </Col>
                         <Col md="4" className="card-detail-right">
                         <CardHeader className="bg-white">
@@ -55,9 +57,9 @@ class Post extends Component {
                             </Link>
     
                    </CardHeader>
-                   <CardBody className="border border-bottom border-gray commentbody">
+                   <CardBody className="commentbody">
     
-                        <div className="overflow-auto comment-d pb-3 pr-3 pt-3" >
+                        <div className="overflow-auto comment-d pb-3 pr-3 pt-3" name="right" >
                         <span className="card-title font-weight-bold title-size">
                         {this.props.userList.filter(user=>user.id===post.author).map(u=>u.userId)}
                            </span> 
@@ -82,7 +84,7 @@ class Post extends Component {
                             }
                         </div>
                         </CardBody>
-                    <CardBody className="detail-icon-body">
+                    <CardBody className="border-top border-gray w-100 detail-icon-body">
                              <span>
                                <FontAwesomeIcon icon={faHeart} size="2x"/> 
                             </span>
@@ -93,7 +95,7 @@ class Post extends Component {
                             <span className="mb-0 text-muted small">{moment(post.regDate).format('MM월DD일')}</span>
                    </CardBody>
                    <Form onSubmit={this.insertForm}>
-                   <CardFooter className="form-row w-auto m-0"> 
+                   <CardFooter className="form-row w-auto m-0 cardfoot"> 
                    <Input type="text" name="postId" id="postId" value={post.id} className="d-none" readOnly/>
                         <Col>
                             <Input type="number" className="form-control" placeholder="작성자" name="author" id="comment_user_id"/>

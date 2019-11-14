@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {PostList,Post} from '../component';
-import {Detail} from '../pages';
+import {PostList} from '../component';
 
-import {Route, Link} from 'react-router-dom';
 class Main extends Component {
     constructor(props){
         super(props);

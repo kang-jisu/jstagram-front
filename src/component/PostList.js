@@ -56,7 +56,7 @@ class PostList extends Component {
                             <Link to={`/delete/post/${post.id}`} aria-hidden="true" >&times;</Link>
                         </Button>
                    </CardHeader>
-                   <CardImg src={img} className="card-img-top" alt={post.image}/>
+                   <CardImg src={`/images/${post.image}`} className="card-img-top" alt={post.image}/>
                    <CardBody className="pt-2 pb-1 border-bottom border-gray">
                         <section>
                             <span>
@@ -103,6 +103,8 @@ class PostList extends Component {
                         </Col>
                    </CardFooter>
                    </Form>
+
+                   
                 </Card> 
                 ))
                 }
