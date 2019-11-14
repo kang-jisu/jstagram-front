@@ -1,0 +1,61 @@
+.post-card{
+    width:614px;
+}
+
+.title-size{
+    font-size:90%;
+}
+.text-size{
+    font-size:80%;
+    padding-left : 3px;
+}
+
+.comment{
+    max-height: 100px;
+}
+
+.comment-d{
+    height:420px;
+}
+.comment-title-size{
+    font-size:85%;
+}
+.comment-text-size{
+    font-size:75%;
+    padding-left : 3px;
+}
+.comment-date-size{
+    font-size:75%;
+}
+
+.commentbody{
+    padding:0px !important;
+    padding-left:1.25rem !important; 
+}
+
+/* /// */
+.post-detail-card{
+    width:935px;
+}
+
+.detail-image{
+    width:600px;
+}
+
+.card-detail-right{
+    position: relative;
+
+}
+
+.detail-head{
+    height:70px;
+}
+
+.closebtn{
+    color:lightslategrey;text-decoration:none;
+}
+
+.detail-icon-body{
+    padding-bottom:15px !important;
+    padding-top:15px !important;
+}

@@ -1,3 +1,20 @@
+
+ jstagram 프론트앤드 
+ react 사용
+ 
+ index.js->App.js-> main/detail
+ main화면에서는 postlist보여주고 댓글 등록 가능
+ detail에서는 post하나 보여주고 댓글 등록, 삭제 가능
+ 
+ post삭제는 구현 했는데 아직 등록은 구현 x
+ user 등록,삭제 구현o (임시)
+ 
+ window.location href ?? 쓴거는 확인해서 수정해야함 
+ 최종수정 2019.11.14
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
